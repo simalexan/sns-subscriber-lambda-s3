@@ -18,6 +18,11 @@ Resources:
             TopicName: !GetAtt SNSTopic.TopicName
         - S3CrudPolicy:
             BucketName: !Ref S3EventStorage
+      Events:
+        SubscribedTopic:
+          Type: SNS
+          Properties:
+            Topic: !Ref SNSTopic
   S3EventStorage:
     Type: AWS::S3::Bucket
 Outputs:

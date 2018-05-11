@@ -11,7 +11,8 @@ exports.handler = (event) => {
 };
 
 saveToS3 = (data) => {
-    let year = date.getFullYear(),
+    let date = new Date(),
+        year = date.getFullYear(),
         month = date.getMonth() + 1,
         day = date.getDate(),
         hash = uuidv4();

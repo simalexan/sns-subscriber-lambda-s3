@@ -9,6 +9,6 @@
     "qd": "npm run package && npm run deploy"
   },
   "keywords": [],
-  "author": "Aleksandar Simovic <alexander.simovic@gmai.com>",
+  "author": "Aleksandar Simovic <alexander.simovic@gmail.com>",
   "license": "MIT"
 }
