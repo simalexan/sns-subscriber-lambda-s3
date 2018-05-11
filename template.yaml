@@ -18,13 +18,6 @@ Resources:
             TopicName: !GetAtt SNSTopic.TopicName
         - S3CrudPolicy:
             BucketName: !Ref S3EventStorage
-      Events:
-        PubApi:
-          Type: Api
-          Properties:
-            Path: /publish
-            Method: POST
-            RestApiId: !Ref ApiPublisher
   S3EventStorage:
     Type: AWS::S3::Bucket
 Outputs:

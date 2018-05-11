@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package": "aws cloudformation package --template-file template.yaml --output-template-file output.yaml --s3-bucket sns-subscriber-lambda-s3-bucket",
+    "deploy": "aws cloudformation deploy --template-file output.yaml --stack-name sns-subscriber-lambda-s3 --capabilities CAPABILITY_IAM",
+    "qd": "npm run package && npm run deploy"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aleksandar Simovic <alexander.simovic@gmai.com>",
   "license": "MIT"
 }
