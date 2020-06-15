@@ -7,7 +7,7 @@ Resources:
   LambdaSubscriber:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: src/
+      CodeUri: src
       Handler: lambda.handler
       Runtime: nodejs12.x
       Environment:
