@@ -1,0 +1,9 @@
+{
+  "name": "sns-lambda-subscribe-s3",
+  "version": "1.1.0",
+  "description": "",
+  "main": "lambda.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
