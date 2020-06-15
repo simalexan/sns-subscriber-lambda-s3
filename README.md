@@ -1,9 +1,15 @@
 
-## SNS -> Lambda -> S3
+# SNS -> Lambda -> S3
 
-#### Description
-This is a SNS Lambda subscriber that stores notification data into an S3 Bucket. 
+## Description
 
-Written in Node.js. 
+This is a SNS Lambda subscriber that stores notification data into an S3 Bucket.
 
-It's a Nuts&Bolts application component for AWS Serverless Application Repository.
+Written in Node.js.
+
+It's a serverless application component, instantly deployable via AWS Serverless Application Repository.
+
+## Latest Release - 1.1.0
+
+- Upgrading the Node.js release to 12.x LTS
+- Using AWS SAM CLI as a deployment tool

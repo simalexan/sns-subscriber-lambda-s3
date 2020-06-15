@@ -7,8 +7,9 @@ Resources:
   LambdaSubscriber:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: index.handler
-      Runtime: nodejs8.10
+      CodeUri: src/
+      Handler: lambda.handler
+      Runtime: nodejs12.x
       Environment:
         Variables:
           TOPIC_ARN: !Ref SNSTopic

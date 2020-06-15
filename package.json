@@ -1,12 +1,10 @@
 {
   "name": "sns-subscriber-lambda-s3",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "package": "aws cloudformation package --template-file template.yaml --output-template-file output.yaml --s3-bucket sns-subscriber-lambda-s3-bucket",
-    "deploy": "aws cloudformation deploy --template-file output.yaml --stack-name sns-subscriber-lambda-s3 --capabilities CAPABILITY_IAM",
-    "qd": "npm run package && npm run deploy"
+    "deploy": "sam deploy"
   },
   "keywords": [],
   "author": "Aleksandar Simovic <alexander.simovic@gmail.com>",
